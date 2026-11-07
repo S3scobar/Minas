@@ -1,0 +1,27 @@
+{
+  "titulo": "Perfil del Ingeniero de Minas y Metalurgia Egresado",
+  "intro": "Un profesional forjado bajo el histórico lema de la Facultad de Minas: «Trabajo y Rectitud», con rigurosa fundamentación en ciencias exactas y de la tierra, solvencia en diseño y operación de minas, maestría en beneficio mineral y metalurgia extractiva, y liderazgo ético en la transformación productiva y sostenible del país.",
+  "rasgos": [
+    {
+      "icono": "perforacion",
+      "titulo": "Diseño y Operación Minera Integral",
+      "texto": "Planea, diseña, ejecuta y optimiza explotaciones mineras subterráneas y de superficie, integrando perforación, voladura de rocas, ventilación de minas, carguío, acarreo y sistemas de bombeo con altos estándares de seguridad."
+    },
+    {
+      "icono": "geologia",
+      "titulo": "Geomecánica y Estabilidad del Macizo Rocoso",
+      "texto": "Evalúa el comportamiento esfuerzo-deformación de las rocas, modela numéricamente la estabilidad de taludes y galerías subterráneas, y dimensiona sistemas de sostenimiento activo y pasivo (pernos, cables, mallas y concreto lanzado)."
+    },
+    {
+      "icono": "yacimientos",
+      "titulo": "Beneficio de Minerales y Metalurgia Extractiva",
+      "texto": "Diseña y opera plantas de conminución, circuitos de flotación de minerales, lixiviación hidrometalúrgica, electroobtención y pirometalurgia en crisoles de fundición para la obtención eficiente y limpia de metales y minerales industriales."
+    },
+    {
+      "icono": "gestion",
+      "titulo": "Economía Minera, Seguridad y Cierre Responsable",
+      "texto": "Gestiona proyectos minero-metalúrgicos con viabilidad económica, cumplimiento de la normatividad minera y ambiental, planes de cierre y post-minería, priorizando la seguridad humana y la convivencia armónica con las comunidades."
+    }
+  ],
+  "fuente": "Proyecto Educativo del Programa (PEP) de Ingeniería de Minas y Metalurgia, Facultad de Minas, Universidad Nacional de Colombia Sede Medellín."
+}

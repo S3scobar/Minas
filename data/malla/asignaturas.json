@@ -1,0 +1,1051 @@
+[
+  {
+    "codigo": "1000004-M",
+    "nombre": "Cálculo Diferencial",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000008-M",
+    "nombre": "Geometría Vectorial y Analítica",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000005-M",
+    "nombre": "Cálculo Integral",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 2,
+    "prerrequisitos": [
+      "1000004-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000003-M",
+    "nombre": "Álgebra Lineal",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 2,
+    "prerrequisitos": [
+      "1000008-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010651",
+    "nombre": "Estadística I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "matematicas-probabilidad-estadistica",
+    "semestre": 3,
+    "prerrequisitos": [
+      "1000005-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006829",
+    "nombre": "Química General",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "quimica",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000019-M",
+    "nombre": "Física Mecánica",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "fisica",
+    "semestre": 2,
+    "prerrequisitos": [
+      "1000004-M",
+      "1000008-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010435",
+    "nombre": "Fundamentos de Programación",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "herramientas-informatica",
+    "semestre": 4,
+    "prerrequisitos": [
+      "1000003-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000006-M",
+    "nombre": "Cálculo en Varias Variables",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000005-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000007-M",
+    "nombre": "Ecuaciones Diferenciales",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000005-M",
+      "1000003-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006905",
+    "nombre": "Matemáticas Especiales",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000007-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006907",
+    "nombre": "Métodos Numéricos",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000005-M",
+      "1000003-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006915",
+    "nombre": "Estadística II",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010651"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000017-M",
+    "nombre": "Física de Electricidad y Magnetismo",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000019-M",
+      "1000005-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000020-M",
+    "nombre": "Física de Oscilaciones, Ondas y Óptica",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000019-M",
+      "1000007-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000018-M",
+    "nombre": "Física Moderna",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000020-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006852",
+    "nombre": "Laboratorio de Física Moderna",
+    "creditos": 1,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000018-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007309",
+    "nombre": "Ciencias de los Materiales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "3006829"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007324",
+    "nombre": "Investigación de Operaciones",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": null,
+    "prerrequisitos": [
+      "1000003-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007000",
+    "nombre": "Geología Física",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007401",
+    "nombre": "Topografía",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 2,
+    "prerrequisitos": [
+      "3007476"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007767",
+    "nombre": "Elementos de Geología Estructural",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 3,
+    "prerrequisitos": [
+      "3007000",
+      "3007401"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007714",
+    "nombre": "Mineralogía",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 2,
+    "prerrequisitos": [
+      "3007000"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010431",
+    "nombre": "Yacimientos Minerales",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3007714"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009301",
+    "nombre": "Geología de Minas",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3010431",
+      "3010651",
+      "3007712",
+      "3007722"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007722",
+    "nombre": "Práctica de Campo I",
+    "creditos": 1,
+    "obligatoria": true,
+    "agrupacion": "geologia-minas",
+    "semestre": 5,
+    "prerrequisitos": [
+      "3010431",
+      "3007714"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007228",
+    "nombre": "Mineralogía Aplicada y de Procesos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007714"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007454",
+    "nombre": "Prospección y Exploración de Recursos Minerales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010431"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010257",
+    "nombre": "Microscopía Óptica de Minerales Opacos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007714"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007448",
+    "nombre": "Recursos Energéticos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010431"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007718",
+    "nombre": "Rocas y Minerales en la Industria",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010431"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010528",
+    "nombre": "Simulación Geoestadística de Yacimientos Minerales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3009301"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010531",
+    "nombre": "Tópicos Especiales en Geología de Minas",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geologia-minas",
+    "semestre": null,
+    "prerrequisitos": [
+      "3009301"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007455",
+    "nombre": "Mecánica Aplicada",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "geomecanica",
+    "semestre": 3,
+    "prerrequisitos": [
+      "1000019-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006960",
+    "nombre": "Mecánica de Fluidos",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "geomecanica",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3007455"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007456",
+    "nombre": "Geomecánica",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "geomecanica",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3007455"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010450",
+    "nombre": "Mecánica Estructural",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "geomecanica",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007455"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010449",
+    "nombre": "Mecánica de Materiales",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "geomecanica",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007455"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010447",
+    "nombre": "Mecánica de Suelos",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "geomecanica",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007455",
+      "3007000"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007711",
+    "nombre": "Geotecnia",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geomecanica",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007456"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3011042",
+    "nombre": "Geomecánica Minera",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "geomecanica",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007720",
+      "3007712",
+      "3007713"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010478",
+    "nombre": "Termodinámica General",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": 5,
+    "prerrequisitos": [
+      "1000019-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009302",
+    "nombre": "Mineralurgia",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3010478"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010690",
+    "nombre": "Metalurgia Extractiva",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3009302"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007483",
+    "nombre": "Balances de Materia y Energía en Procesos Metalúrgicos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010478"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007580",
+    "nombre": "Pirometalurgia",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010690"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008658",
+    "nombre": "Flotación de Minerales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3009302"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008198",
+    "nombre": "Química Metalúrgica",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3006829"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009300",
+    "nombre": "Diseño y Dimensionamiento de Equipos de Minería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009668",
+    "nombre": "Hidrometalurgia",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010690"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009770",
+    "nombre": "Electrometalurgia",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010690"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007724",
+    "nombre": "Beneficio de Minerales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3009302"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009707",
+    "nombre": "Electroquímica Metalúrgica",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010690"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010429",
+    "nombre": "Tópicos Especiales en Beneficio de Minerales",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "beneficio-minerales-metalurgia",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010690"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007716",
+    "nombre": "Perforación y Fragmentación de Rocas",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 5,
+    "prerrequisitos": [
+      "3007456"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007720",
+    "nombre": "Sostenimiento de Minas",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3007456"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008748",
+    "nombre": "Planeamiento Minero",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 9,
+    "prerrequisitos": [
+      "3009301"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010428",
+    "nombre": "Transporte Minero",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3007716"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007700",
+    "nombre": "Ambientes Mineros",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3006960"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007712",
+    "nombre": "Minería de Superficie",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3007456",
+      "3010428"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007713",
+    "nombre": "Minería Subterránea",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3007720",
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007717",
+    "nombre": "Práctica de Campo II",
+    "creditos": 1,
+    "obligatoria": true,
+    "agrupacion": "tecnologia-minera",
+    "semestre": 9,
+    "prerrequisitos": [
+      "3007712",
+      "3007722"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008602",
+    "nombre": "Introducción al Control Minero-Metalúrgico",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "tecnologia-minera",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010478"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009031",
+    "nombre": "Simulación Minero-Metalúrgica",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "tecnologia-minera",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010690"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010534",
+    "nombre": "Explotación de Canteras",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "tecnologia-minera",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008659",
+    "nombre": "Legislación Minera",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "tecnologia-minera",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007476"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009361",
+    "nombre": "Tópicos Especiales en Minería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "tecnologia-minera",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010408",
+    "nombre": "Fundamentos de Proyectos en Ingeniería",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "proyectos-ingenieria",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3007476"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010407",
+    "nombre": "Estructuración y Evaluación de Proyectos de Ingeniería",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "proyectos-ingenieria",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3010408"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010439",
+    "nombre": "Proyecto Integrado de Ingeniería",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "proyectos-ingenieria",
+    "semestre": 9,
+    "prerrequisitos": [
+      "3010407"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007476",
+    "nombre": "Introducción a la Ingeniería de Minas y Metalurgia",
+    "creditos": 1,
+    "obligatoria": true,
+    "agrupacion": "area-integradora",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007704",
+    "nombre": "Economía de Minas",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007712",
+      "3007713"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007723",
+    "nombre": "Cierre de Minas",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3008748",
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008661",
+    "nombre": "Sistemas de Gestión Aplicados a la Minería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010102",
+    "nombre": "Desarrollo Sostenible y Minería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3007713",
+      "3007712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007022",
+    "nombre": "Ecología General",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000009-M",
+    "nombre": "Biología General",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010533",
+    "nombre": "Estimación de Costos en Minería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009224",
+    "nombre": "Ética en la Profesionalización de Ingenieros",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010291",
+    "nombre": "Introducción a la Seguridad Minera",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010674",
+    "nombre": "Estrategias de Gestión y Gerencia de Proyectos en Ingeniería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010407"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010537",
+    "nombre": "Gestión de Proyectos de Desarrollo y Metodología General Ajustada",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010407"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010668",
+    "nombre": "Proyectos de Innovación y Desarrollo",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010407"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010669",
+    "nombre": "Toma de Decisión para el Diseño en Ingeniería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010407"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010535",
+    "nombre": "Fundamentos de Ciclo de Vida para Ingeniería",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "area-integradora",
+    "semestre": null,
+    "prerrequisitos": [
+      "3010439"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007480",
+    "nombre": "Trabajo de Grado",
+    "creditos": 6,
+    "obligatoria": true,
+    "agrupacion": "trabajo-de-grado",
+    "semestre": 10,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010681",
+    "nombre": "Práctica de Extensión",
+    "creditos": 6,
+    "obligatoria": false,
+    "agrupacion": "trabajo-de-grado",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007481",
+    "nombre": "Cursos de Posgrado",
+    "creditos": 6,
+    "obligatoria": false,
+    "agrupacion": "trabajo-de-grado",
+    "semestre": null,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  }
+]

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <radialGradient id="bgGradArma" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#212121"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="silverGradArma" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#BDBDBD"/>
+      <stop offset="100%" stop-color="#757575"/>
+    </linearGradient>
+    <linearGradient id="goldGradArma" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="100%" stop-color="#FFC107"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="40" fill="url(#bgGradArma)"/>
+  <circle cx="150" cy="150" r="130" fill="none" stroke="url(#silverGradArma)" stroke-width="3" stroke-dasharray="6 4"/>
+  <circle cx="150" cy="150" r="118" fill="#141414" stroke="#2a2a2a" stroke-width="2"/>
+  
+  <!-- Rock Mass / Geomechanics Symbol -->
+  <g transform="translate(150, 115) scale(0.95)">
+    <!-- Polygon Rock Core -->
+    <polygon points="0,-42 38,-15 28,32 -28,32 -38,-15" fill="#1c1c1c" stroke="url(#goldGradArma)" stroke-width="3"/>
+    <!-- Stress lines -->
+    <line x1="0" y1="-42" x2="0" y2="32" stroke="url(#silverGradArma)" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <line x1="-38" y1="-15" x2="28" y2="32" stroke="url(#silverGradArma)" stroke-width="1.5"/>
+    <line x1="38" y1="-15" x2="-28" y2="32" stroke="url(#silverGradArma)" stroke-width="1.5"/>
+    <!-- Stress Arrows -->
+    <path d="M-52 0 L-42 0 M-45 -4 L-42 0 L-45 4" stroke="url(#goldGradArma)" stroke-width="2" fill="none"/>
+    <path d="M52 0 L42 0 M45 -4 L42 0 L45 4" stroke="url(#goldGradArma)" stroke-width="2" fill="none"/>
+    <path d="M0 -55 L0 -45 M-4 -48 L0 -45 L4 -48" stroke="url(#goldGradArma)" stroke-width="2" fill="none"/>
+    <path d="M0 45 L0 35 M-4 38 L0 35 L4 38" stroke="url(#goldGradArma)" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- ARMA Text -->
+  <text x="150" y="200" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="900" font-size="36" fill="url(#silverGradArma)" text-anchor="middle" letter-spacing="4">ARMA</text>
+  <text x="150" y="222" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="url(#goldGradArma)" text-anchor="middle" letter-spacing="1.5">AMERICAN ROCK MECHANICS ASSOC.</text>
+  <text x="150" y="238" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9" fill="#BDBDBD" text-anchor="middle" letter-spacing="1.5">UNAL MEDELLÍN CHAPTER</text>
+</svg>

@@ -1,0 +1,80 @@
+{
+  "nombre": "Ingeniería de Minas y Metalurgia",
+  "universidad": "Universidad Nacional de Colombia",
+  "sede": "Medellín",
+  "facultad": "Facultad de Minas",
+  "lema": "Trabajo y Rectitud",
+  "descripcion": [
+    "La Ingeniería de Minas y Metalurgia en la Facultad de Minas de la Universidad Nacional de Colombia (Sede Medellín) es el programa insignia y fundacional de la ingeniería en el país, cuna de la Escuela Nacional de Minas fundada en 1887. Se fundamenta en dos grandes pilares tecnológicos: las Técnicas de Explotación Minera y la Metalurgia Extractiva.",
+    "Forma profesionales íntegros con sólida fundamentación científica, criterio ético, destreza digital y alta sensibilidad socioambiental, preparados para explorar depósitos minerales, diseñar y operar minas subterráneas y a cielo abierto, liderar plantas de beneficio de minerales y refinación metalúrgica, y garantizar la seguridad minera y la sostenibilidad integral de los recursos minerales y estratégicos de Colombia y el mundo."
+  ],
+  "rutas": [
+    {
+      "id": "mineria-subterranea-superficie",
+      "nombre": "Explotación Minera Subterránea y de Superficie",
+      "descripcion": "Diseño de labores mineras, perforación, voladura de rocas, sistemas de acarreo y transporte, ventilación y planeamiento minero estratégico.",
+      "icono": "perforacion",
+      "color": "#FFC107"
+    },
+    {
+      "id": "geomecanica-macizo",
+      "nombre": "Geomecánica y Sostenimiento de Excavaciones",
+      "descripcion": "Caracterización del macizo rocoso, estado de esfuerzos in situ, estabilidad de taludes y diseño de sostenimiento con pernos, mallas y shotcrete.",
+      "icono": "geologia",
+      "color": "#212121"
+    },
+    {
+      "id": "mineralurgia-metalurgia",
+      "nombre": "Mineralurgia y Metalurgia Extractiva",
+      "descripcion": "Conminución, flotación de sulfuros, lixiviación hidrometalúrgica, electroobtención, pirometalurgia en crisol y refinación de metales puros.",
+      "icono": "yacimientos",
+      "color": "#D49E00"
+    },
+    {
+      "id": "geologia-yacimientos",
+      "nombre": "Geología de Minas & Geoestadística de Yacimientos",
+      "descripcion": "Exploración de depósitos, mineralogía de menas, microscopía de minerales opacos, modelamiento geológico 3D y cálculo de reservas.",
+      "icono": "produccion",
+      "color": "#BDBDBD"
+    },
+    {
+      "id": "sostenibilidad-cierre",
+      "nombre": "Sostenibilidad, Economía Minera y Cierre de Minas",
+      "descripcion": "Evaluación económica y financiera de proyectos, gestión ambiental, seguridad minera, transición hacia minerales críticos y planes de cierre.",
+      "icono": "transicion",
+      "color": "#006633"
+    }
+  ],
+  "ficha": [
+    { "etiqueta": "Título que otorga", "valor": "Ingeniero(a) de Minas y Metalurgia" },
+    { "etiqueta": "Créditos del plan", "valor": "180 créditos" },
+    { "etiqueta": "Duración del plan", "valor": "10 semestres" },
+    { "etiqueta": "Modalidad", "valor": "Presencial" },
+    { "etiqueta": "Jornada", "valor": "Diurna" },
+    { "etiqueta": "Sede y facultad", "valor": "Medellín · Facultad de Minas" },
+    { "etiqueta": "Área Curricular", "valor": "Recursos Minerales" },
+    { "etiqueta": "Código SNIES", "valor": "118" },
+    { "etiqueta": "Código SIA", "valor": "3532" },
+    { "etiqueta": "Normativa Vigente", "valor": "Acuerdo 036 de 2014 (Consejo Académico) y Resoluciones Reglamentarias" }
+  ],
+  "cifras": [
+    { "valor": "180", "texto": "créditos" },
+    { "valor": "10", "texto": "semestres" },
+    { "valor": "Presencial", "texto": "jornada diurna" },
+    { "valor": "SNIES 118", "texto": "registro ministerial" }
+  ],
+  "acreditacion": {
+    "estado": "Acreditación de Alta Calidad · Tradición & Liderazgo Global",
+    "hitos": [
+      { "anio": "Tradición desde 1887", "texto": "Programa fundacional de la Escuela Nacional de Minas, columna vertebral del desarrollo ingenieril e industrial de Colombia." },
+      { "anio": "Top Global QS Rankings", "texto": "Destacado consistentemente entre los programas universitarios más prestigiosos del mundo en Ingeniería de Minas y Minerales." },
+      { "anio": "Acreditación MEN", "texto": "Reconocimiento ministerial de Alta Calidad que certifica su excelencia en docencia, investigación de punta y laboratorios especializados." }
+    ],
+    "nota": "Para consultas académicas, remitirse a la Dirección de Área Curricular de Recursos Minerales, Campus Robledo, Bloque M3."
+  },
+  "fuentes": [
+    { "titulo": "Página oficial del programa · Facultad de Minas UNAL", "url": "https://old-minas.medellin.unal.edu.co/formacion/pregrado/ingenieriademinas" },
+    { "titulo": "Facultad de Minas · Universidad Nacional de Colombia", "url": "https://minas.medellin.unal.edu.co/" },
+    { "titulo": "Carpeta de Recursos de la Carrera (Drive)", "url": "https://drive.google.com/drive/u/4/folders/1N2g1Db6bL1YUdycsTLm0p7Zhqoiruc4s" }
+  ]
+}

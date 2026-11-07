@@ -1,0 +1,1458 @@
+/**
+ * PLATAFORMA DIGITAL · INGENIERÍA DE MINAS Y METALURGIA (UNAL MEDELLÍN)
+ * Diseño y Estilos por: Santiago Escobar Arias · Representante de Sistemas
+ * © 2026 Santiago Escobar Arias. Todos los derechos reservados.
+ * Obra protegida por la Ley 23 de 1982 y Decisión 351 (CAN).
+ */
+/* =========================================================
+   MÓDULO INICIO — INGENIERÍA DE MINAS Y METALURGIA
+   1. Hero Landing 2-Columnas & Gemelo Digital 4.0
+   2. Simulador Interactivo del Ciclo Minero-Metalúrgico
+   3. El Programa (Ficha, Ejes Curriculares y Acreditación)
+   4. Perfil del Egresado
+   5. Capítulos Estudiantiles (SME & ARMA)
+   ========================================================= */
+
+
+/* ---------- 1. Hero Landing Minero (Distribución en 2 Columnas) ---------- */
+
+.hero-minas,
+.hero-petroleos {
+  position: relative;
+  background: radial-gradient(circle at 75% 25%, #262626 0%, #151515 45%, #050505 100%);
+  overflow: hidden;
+  padding: 56px 0 64px;
+}
+
+.hero-minas__ondas,
+.hero-petroleos__ondas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-minas__svg-estratigrafia,
+.hero-petroleos__svg-estratigrafia {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-minas__grid,
+.hero-petroleos__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-minas__info,
+.hero-petroleos__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-minas__insignia,
+.hero-petroleos__insignia {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: rgba(33, 33, 33, 0.9);
+  border: 1.5px solid rgba(255, 193, 7, 0.55);
+  color: #FFF176;
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.hero-minas__icono-unal,
+.hero-petroleos__icono-unal {
+  display: flex;
+  color: var(--oro-minero);
+}
+
+.hero-minas__snies-pill,
+.hero-petroleos__snies-pill {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--oro-minero);
+  color: #000000;
+  font-size: 11px;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+.hero-minas__titulo,
+.hero-petroleos__titulo {
+  margin: 0 0 16px;
+}
+
+.hero-minas__antetitulo,
+.hero-petroleos__antetitulo {
+  display: block;
+  font-family: var(--letra-universidad);
+  font-size: clamp(13px, 1.8vw, 16px);
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--oro-minero);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-minas__nombre-carrera,
+.hero-petroleos__nombre-carrera {
+  font-size: clamp(32px, 3.8vw, 50px);
+  line-height: 1.08;
+  display: block;
+  letter-spacing: .02em;
+  color: #ffffff;
+}
+
+.hero-minas__desc,
+.hero-petroleos__desc {
+  font-size: clamp(15px, 1.35vw, 17px);
+  line-height: 1.65;
+  color: #E0E0E0;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+/* Grilla de cifras clave directamente en el Hero */
+.hero-minas__cifras,
+.hero-petroleos__cifras {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+  list-style: none;
+}
+
+.hero-minas__cifras li,
+.hero-petroleos__cifras li {
+  background: rgba(33, 33, 33, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(255, 193, 7, 0.4);
+  border-radius: 14px;
+  padding: 12px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--letra-titulo);
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF176;
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.6);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.hero-minas__cifras li:hover,
+.hero-petroleos__cifras li:hover {
+  transform: translateY(-2px);
+  border-color: var(--oro-minero);
+}
+
+.hero-minas__cifras li small,
+.hero-petroleos__cifras li small {
+  font-family: var(--letra-universidad);
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #BDBDBD;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+/* =========================================================
+   GEMELO DIGITAL 4.0: MINA Y PLANTA (HERO PRO VISUAL)
+   ========================================================= */
+
+.hero-minas__visual,
+.hero-petroleos__visual {
+  position: relative;
+  width: 100%;
+  perspective: 1200px;
+}
+
+.digital-twin-console {
+  background: rgba(22, 22, 22, 0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(255, 193, 7, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 193, 7, 0.15);
+  overflow: hidden;
+  transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+  transform-style: preserve-3d;
+  max-width: 480px;
+  margin-inline: auto 0;
+}
+
+.digital-twin-console:hover {
+  border-color: rgba(255, 193, 7, 0.8);
+  box-shadow: 0 26px 56px -10px rgba(0, 0, 0, 0.95), 0 0 38px rgba(255, 193, 7, 0.22);
+}
+
+.console-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(33, 33, 33, 0.9);
+  border-bottom: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.console-header__radar {
+  display: flex;
+  align-items: center;
+}
+
+.console-title {
+  font-family: var(--letra-codigo);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: #FFF176;
+}
+
+.console-header__badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--letra-codigo);
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #BDBDBD;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 193, 7, 0.25);
+  letter-spacing: .06em;
+}
+
+/* Selector de régimen */
+.console-switch {
+  display: flex;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(14, 14, 14, 0.85);
+  border-bottom: 1px solid rgba(255, 193, 7, 0.25);
+}
+
+.console-switch__btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 193, 7, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  color: #BDBDBD;
+  font-family: var(--letra-universidad);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.console-switch__btn:hover {
+  color: #fff;
+  border-color: rgba(255, 193, 7, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.console-switch__btn.is-active {
+  background: linear-gradient(135deg, #FFF176 0%, #FFC107 55%, #FFA000 100%);
+  color: #000000;
+  border-color: #FFF9C4;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(255, 193, 7, 0.45);
+}
+
+/* Área de renderizado del lienzo Canvas 3D */
+.console-canvas-wrap {
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #212121 0%, #151515 70%, #090909 100%);
+  overflow: hidden;
+  height: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas-minas-digital,
+#canvas-petro-digital {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* HUD de Telemetría Flotante */
+.console-hud {
+  position: absolute;
+  inset: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.hud-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 193, 7, 0.35);
+  border-radius: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.hud-label {
+  font-family: var(--letra-codigo);
+  font-size: 8.5px;
+  letter-spacing: .1em;
+  color: #BDBDBD;
+  font-weight: 700;
+}
+
+.hud-val {
+  font-family: var(--letra-titulo);
+  font-size: 14px;
+  font-weight: 800;
+  color: #FFF176;
+  margin: 1px 0;
+}
+
+.hud-sub {
+  font-family: var(--letra-codigo);
+  font-size: 8.5px;
+  color: #E0E0E0;
+}
+
+/* Pie de consola con métricas */
+.console-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(18, 18, 18, 0.95);
+  border-top: 1px solid rgba(255, 193, 7, 0.25);
+}
+
+.console-metric {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.metric-label {
+  font-family: var(--letra-codigo);
+  font-size: 8px;
+  letter-spacing: .08em;
+  color: #BDBDBD;
+  font-weight: 600;
+}
+
+.metric-val {
+  font-family: var(--letra-titulo);
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #FFF176;
+  margin-top: 1px;
+  transition: color 0.3s;
+}
+
+.console-metric--highlight .metric-val {
+  color: #FFC107;
+  font-size: 12px;
+}
+
+
+/* ---------- 2. Simulador Interactivo del Ciclo Minero-Metalúrgico ---------- */
+
+.seccion--simulador {
+  background: #F4F5F7;
+  padding: 64px 0 80px;
+  border-bottom: 1px solid var(--linea);
+}
+
+.simulador-caja {
+  background: #181818;
+  border: 1.5px solid rgba(255, 193, 7, 0.45);
+  border-radius: 26px;
+  box-shadow: 0 24px 56px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 193, 7, 0.1);
+  overflow: hidden;
+}
+
+/* Barra de pestañas / fases */
+.simulador-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px 20px;
+  background: rgba(12, 12, 12, 0.9);
+  border-bottom: 1px solid rgba(255, 193, 7, 0.25);
+}
+
+.simulador-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #DDE5ED;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.simulador-tab:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 193, 7, 0.5);
+}
+
+.simulador-tab.is-activa {
+  background: var(--oro-minero);
+  color: #000000;
+  border-color: #FFF9C4;
+  font-weight: 800;
+  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.45);
+}
+
+/* Grid del simulador */
+.simulador-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 0;
+  min-height: 480px;
+}
+
+/* Columna visual del ciclo minero */
+.simulador-visual {
+  position: relative;
+  background: linear-gradient(180deg, #222222 0%, #121212 100%);
+  border-right: 1px solid rgba(255, 193, 7, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  padding: 18px 24px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.estrato {
+  position: relative;
+  border-radius: 12px;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 58px;
+}
+
+/* Columna de simbología minera */
+.estrato__pozo-col {
+  width: 68px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-right: 1px dashed rgba(255, 193, 7, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.estrato__info-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.estrato__etiqueta {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.estrato__cota {
+  font-family: var(--letra-codigo);
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 3px;
+}
+
+/* Estrato 1: Bocamina y Castillo de Winche */
+.estrato--bocamina {
+  min-height: 86px;
+  background: linear-gradient(180deg, #2a2a2a 0%, #181818 100%);
+  border-color: rgba(255, 193, 7, 0.45);
+}
+.estrato--bocamina .estrato__etiqueta {
+  color: #FFF176;
+}
+
+.estrato__torre-castillo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.estrato__vagoneta-animada {
+  width: 12px;
+  height: 8px;
+  background: #FFC107;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.9);
+  animation: carroMove 3s ease-in-out infinite alternate;
+  margin-top: 4px;
+}
+
+@keyframes carroMove {
+  0% { transform: translateX(-8px); }
+  100% { transform: translateX(8px); }
+}
+
+/* Estrato 2: Macizo Rocoso */
+.estrato--macizo {
+  background: repeating-linear-gradient(45deg, #242424, #242424 10px, #1a1a1a 10px, #1a1a1a 20px);
+  color: #BDBDBD;
+}
+
+/* Estrato 3: Galería Subterránea */
+.estrato--galeria {
+  background: linear-gradient(90deg, rgba(255, 193, 7, 0.12) 0%, rgba(33, 33, 33, 0.8) 50%, rgba(255, 193, 7, 0.12) 100%), #141414;
+  border-color: rgba(255, 193, 7, 0.35);
+}
+.estrato--galeria .estrato__etiqueta {
+  color: #FFF176;
+}
+
+.estrato__galeria-tunel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.estrato__riel-pista {
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  background: #BDBDBD;
+}
+
+.estrato__carro-minero {
+  width: 14px;
+  height: 10px;
+  background: #FFC107;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #FFC107;
+  animation: carroTunel 2.5s infinite alternate;
+}
+
+@keyframes carroTunel {
+  0% { transform: translateY(-4px); }
+  100% { transform: translateY(4px); }
+}
+
+/* Estrato 4: Veta Aurífera */
+.estrato--veta {
+  min-height: 82px;
+  background: radial-gradient(circle at 60% 50%, rgba(255, 193, 7, 0.35), transparent 70%), #141414;
+  border-color: var(--oro-minero);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.estrato--veta .estrato__etiqueta {
+  color: #FFF59D;
+}
+
+.estrato__veta-aurifera-glow {
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #FFC107 0%, #FFA000 100%);
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.9);
+  animation: pulsoVeta 2s infinite alternate;
+}
+
+@keyframes pulsoVeta {
+  0% { opacity: 0.6; filter: drop-shadow(0 0 4px #FFC107); }
+  100% { opacity: 1; filter: drop-shadow(0 0 14px #FFF176); }
+}
+
+/* Estrato 5: Planta Metalúrgica */
+.estrato--planta {
+  background: linear-gradient(180deg, #262626 0%, #171717 100%);
+  border-color: rgba(255, 193, 7, 0.4);
+}
+.estrato--planta .estrato__etiqueta {
+  color: #FFF176;
+}
+
+.estrato__crisol-indicador {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #D84315;
+  box-shadow: 0 0 12px #FFC107;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crisol__oro-gota {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFF176;
+}
+
+/* Resaltado según modo activo */
+.modo-exploracion .estrato--veta {
+  border-width: 2px;
+  box-shadow: 0 0 16px rgba(255, 193, 7, 0.4);
+}
+
+.modo-explotacion .estrato--galeria {
+  border-width: 2px;
+  box-shadow: 0 0 16px rgba(255, 193, 7, 0.4);
+}
+
+.modo-mineralurgia .estrato--macizo {
+  border-color: var(--oro-minero);
+}
+
+.modo-metalurgia .estrato--planta {
+  border-width: 2px;
+  box-shadow: 0 0 16px rgba(255, 193, 7, 0.4);
+}
+
+/* Columna de telemetría */
+.simulador-panel {
+  padding: 36px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #181818;
+  color: #fff;
+}
+
+.simulador-panel__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(255, 193, 7, 0.15);
+  border: 1px solid var(--oro-minero);
+  color: var(--oro-minero);
+  font-family: var(--letra-codigo);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.simulador-panel__titulo {
+  font-family: var(--letra-titulo);
+  font-size: clamp(22px, 2.5vw, 28px);
+  color: #ffffff;
+  margin: 12px 0 8px;
+  line-height: 1.25;
+}
+
+.simulador-panel__desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-bottom: 24px;
+}
+
+/* Tarjetas de telemetría digital */
+.simulador-telemetria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.telemetria-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 193, 7, 0.28);
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color .2s ease;
+}
+
+.telemetria-card:hover {
+  border-color: var(--oro-minero);
+}
+
+.telemetria-card__label {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #BDBDBD;
+}
+
+.telemetria-card__valor {
+  font-family: var(--letra-codigo);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--oro-minero);
+}
+
+/* Materias vinculadas */
+.simulador-panel__materias {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.materias-label {
+  display: block;
+  font-size: 12px;
+  color: #BDBDBD;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.materias-pildoras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.materia-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 193, 7, 0.14);
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  color: #FFF9C4;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+.materia-chip:hover {
+  background: var(--oro-minero);
+  color: #000000;
+  border-color: #fff;
+}
+  background: var(--dorado-ambar);
+  color: var(--negro-crudo);
+  transform: translateY(-1px);
+}
+
+
+/* ---------- 3. El Programa (Ficha y Ejes) ---------- */
+
+.programa__rejilla {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.programa__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 30px -20px rgba(0, 0, 0, .25);
+  font-size: 16.5px;
+  color: var(--tinta-suave);
+}
+
+.programa__lema {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--azul-petroleo);
+  border: 1px solid var(--dorado-ambar);
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--dorado-ambar);
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+.ficha {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 30px -20px rgba(0, 0, 0, .25);
+  overflow: hidden;
+}
+.ficha li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 22px;
+}
+.ficha li:nth-child(odd) { background: #f4f7fb; }
+.ficha__etiqueta {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gris);
+  flex-shrink: 0;
+}
+.ficha__valor {
+  text-align: right;
+  font-weight: 700;
+  color: var(--azul-petroleo);
+  word-break: break-word;
+}
+
+.programa__parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  line-height: 1.65;
+}
+
+
+/* ---------- Ejes Curriculares / Rutas ---------- */
+
+.rutas-curriculares {
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.seccion-titulo--rutas {
+  margin-bottom: 28px;
+}
+
+.rutas__titulo {
+  font-family: var(--letra-titulo);
+  font-size: clamp(26px, 3.2vw, 36px);
+  color: var(--carbon-oscuro);
+  letter-spacing: -.02em;
+  margin: 4px 0 10px;
+}
+
+.rutas__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.ruta-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 22px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.08);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  overflow: hidden;
+}
+
+.ruta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-ruta, var(--dorado-ambar));
+}
+
+.ruta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.16);
+  border-color: var(--color-ruta, var(--dorado-ambar));
+}
+
+.ruta-card__encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.ruta-card__numero {
+  font-family: var(--letra-titulo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--color-ruta, var(--dorado-ambar));
+}
+
+.ruta-card__icono {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ruta, var(--dorado-ambar));
+}
+
+.ruta-card__icono svg {
+  width: 22px;
+  height: 22px;
+}
+
+.ruta-card__nombre {
+  font-family: var(--letra-titulo);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--azul-petroleo);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.ruta-card__descripcion {
+  font-size: 14px;
+  color: var(--tinta-suave);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.ruta-card__pie {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #edf2f7;
+}
+
+.ruta-card__enlace {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--letra-universidad);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--azul-petroleo);
+  text-decoration: none;
+  transition: gap .15s, color .15s;
+}
+
+.ruta-card__enlace:hover {
+  gap: 10px;
+  color: #B8860B;
+}
+
+
+/* ---------- Acreditación ---------- */
+
+.acreditacion {
+  margin-top: 48px;
+  padding: 36px 34px;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 193, 7, 0.35);
+  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.08);
+}
+
+.acreditacion__cabecera {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.acreditacion__sello-icono {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(255, 193, 7, 0.15);
+  border: 2px solid var(--oro-minero);
+  color: var(--oro-minero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.acreditacion__sello-icono svg {
+  width: 30px;
+  height: 30px;
+}
+
+.acreditacion__antetitulo {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #B8860B;
+}
+
+.acreditacion__estado {
+  font-family: var(--letra-titulo);
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: var(--carbon-oscuro);
+  font-weight: 700;
+}
+
+.acreditacion__rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.acreditacion__tarjeta {
+  background: #F7FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acreditacion__tarjeta--renovacion {
+  border-left: 4px solid var(--dorado-ambar);
+  background: #fffdf5;
+}
+
+.acreditacion__tarjeta-encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acreditacion__anio-badge {
+  font-family: var(--letra-codigo);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--carbon-oscuro);
+  background: rgba(0, 0, 0, 0.06);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.acreditacion__hito-tipo {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #B8860B;
+  font-weight: 600;
+}
+
+.acreditacion__texto {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--tinta-suave);
+}
+
+.acreditacion__pie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #E2E8F0;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+.acreditacion__info-icono {
+  width: 18px;
+  height: 18px;
+  color: var(--carbon-oscuro);
+  flex-shrink: 0;
+}
+
+.fuentes {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gris);
+}
+.fuentes a { color: var(--carbon-oscuro); font-weight: 600; }
+
+
+/* ---------- 4. Perfil del Egresado ---------- */
+
+.perfil {
+  background: #F4F4F4;
+}
+
+.perfil__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rasgo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px 24px;
+  border-radius: 20px;
+  background: #fff;
+  border-top: 5px solid var(--carbon-oscuro);
+  box-shadow: 0 14px 30px -20px rgba(0, 0, 0, .2);
+  transition: transform .2s ease;
+}
+
+.rasgo:hover {
+  transform: translateY(-3px);
+}
+
+.rasgo:nth-child(2) { border-top-color: var(--dorado-ambar); }
+.rasgo:nth-child(3) { border-top-color: var(--verde-minas); }
+.rasgo:nth-child(4) { border-top-color: #B8860B; }
+
+.rasgo__icono {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--azul-petroleo);
+  color: var(--dorado-ambar);
+}
+.rasgo:nth-child(2) .rasgo__icono { background: #1C1C1C; color: var(--dorado-ambar); }
+.rasgo:nth-child(3) .rasgo__icono { background: var(--verde-minas); color: #fff; }
+.rasgo:nth-child(4) .rasgo__icono { background: #0E4B75; color: #FFE57F; }
+
+.rasgo__icono svg { width: 26px; height: 26px; }
+
+.rasgo h3 {
+  font-family: var(--letra-titulo);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--azul-petroleo);
+  line-height: 1.3;
+}
+
+.rasgo p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--tinta-suave);
+}
+
+.perfil__fuente {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+
+/* ---------- 5. Capítulos Estudiantiles (Capítulos Técnicos Minero-Metalúrgicos) ---------- */
+
+.grupos {
+  padding: 80px 0 96px;
+  background: radial-gradient(circle at 50% 10%, #262626 0%, #141414 55%, #000000 100%);
+}
+
+.grupos .seccion-titulo__antetitulo { color: var(--oro-minero); }
+.grupos .seccion-titulo h2 { color: #ffffff; }
+.grupos .seccion-titulo__intro { color: var(--oro-suave); }
+
+.grupos__grid-nodos {
+  list-style: none;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px 28px;
+}
+
+.grupo-nodo {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(212, 175, 55, 0.25);
+  border-radius: 24px;
+  padding: 28px 24px 24px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.grupo-nodo:hover {
+  transform: translateY(-5px);
+  border-color: var(--dorado-ambar);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6), 0 0 24px rgba(212, 175, 55, 0.25);
+}
+
+.grupo-nodo__enlace-ig {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.grupo-nodo__capsula {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grupo-nodo__anillos {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.grupo-nodo__onda {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px dashed var(--dorado-ambar);
+  opacity: 0.4;
+  animation: radarGirar 12s linear infinite;
+}
+
+.grupo-nodo__onda--2 {
+  inset: -6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.15);
+  animation: radarGirar 20s linear infinite reverse;
+}
+
+@keyframes radarGirar {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.grupo-nodo__emblema {
+  width: 90px;
+  height: 90px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 2.5px solid var(--dorado-ambar);
+  padding: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  overflow: hidden;
+}
+
+.grupo-nodo:hover .grupo-nodo__emblema {
+  transform: scale(1.08);
+  border-color: #FFE57F;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.grupo-nodo__emblema-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+}
+
+.grupo-nodo__hover-pill {
+  position: absolute;
+  bottom: -10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--dorado-ambar);
+  color: var(--negro-crudo);
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: all .2s ease;
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.grupo-nodo:hover .grupo-nodo__hover-pill {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grupo-nodo__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.grupo-nodo__tipo {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dorado-ambar);
+  margin-bottom: 4px;
+}
+
+.grupo-nodo__nombre {
+  font-family: var(--letra-titulo);
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.grupo-nodo__subtitulo {
+  font-size: 12px;
+  color: #A9C2DC;
+  margin-bottom: 12px;
+}
+
+.grupo-nodo__desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #D3E0EE;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.grupo-nodo__pie {
+  margin-top: auto;
+  width: 100%;
+}
+
+.grupo-nodo__btn-accion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #fff;
+  font-family: var(--letra-universidad);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+.grupo-nodo__btn-accion:hover {
+  background: var(--dorado-ambar);
+  color: var(--negro-crudo);
+  border-color: #FBF4D8;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 980px) {
+  .hero-petroleos {
+    padding: 40px 0 50px;
+  }
+  .hero-petroleos__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .hero-petroleos__cifras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .simulador-grid {
+    grid-template-columns: 1fr;
+  }
+  .simulador-visual {
+    border-right: none;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  .programa__rejilla {
+    grid-template-columns: 1fr;
+  }
+  .grupos__grid-nodos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-petroleos__cifras {
+    grid-template-columns: 1fr;
+  }
+  .petro-rig-card__footer {
+    grid-template-columns: 1fr;
+  }
+  .simulador-telemetria {
+    grid-template-columns: 1fr;
+  }
+  .simulador-tabs {
+    flex-direction: column;
+  }
+  .simulador-tab {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

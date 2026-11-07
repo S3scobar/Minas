@@ -1,0 +1,128 @@
+{
+  "componentes": [
+    {
+      "id": "fundamentacion",
+      "nombre": "Fundamentación",
+      "color": "#D49E00",
+      "descripcion": "Ciencias básicas: matemáticas, física, química y programación que constituyen el cimiento analítico y conceptual para la ingeniería."
+    },
+    {
+      "id": "disciplinar",
+      "nombre": "Formación disciplinar o profesional",
+      "color": "#212121",
+      "descripcion": "Geología de minas, geomecánica, tecnología de explotación subterránea y a cielo abierto, mineralurgia, metalurgia extractiva y proyectos."
+    },
+    {
+      "id": "libre-eleccion",
+      "nombre": "Libre elección",
+      "color": "#BDBDBD",
+      "descripcion": "Créditos de libre elección (20% del plan = 36 créditos) para complementar con profundizaciones técnicas, humanísticas, idiomas o posgrados."
+    }
+  ],
+  "agrupaciones": [
+    {
+      "id": "matematicas-probabilidad-estadistica",
+      "componente": "fundamentacion",
+      "nombre": "Matemáticas, Probabilidad y Estadística",
+      "exigidos": 19,
+      "obligatorios": 19,
+      "optativos": 0
+    },
+    {
+      "id": "quimica",
+      "componente": "fundamentacion",
+      "nombre": "Química",
+      "exigidos": 3,
+      "obligatorios": 3,
+      "optativos": 0
+    },
+    {
+      "id": "fisica",
+      "componente": "fundamentacion",
+      "nombre": "Física",
+      "exigidos": 4,
+      "obligatorios": 4,
+      "optativos": 0
+    },
+    {
+      "id": "herramientas-informatica",
+      "componente": "fundamentacion",
+      "nombre": "Herramientas de Informática",
+      "exigidos": 3,
+      "obligatorios": 3,
+      "optativos": 0
+    },
+    {
+      "id": "optativas-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Optativas de Fundamentación",
+      "exigidos": 16,
+      "obligatorios": 0,
+      "optativos": 16
+    },
+    {
+      "id": "geologia-minas",
+      "componente": "disciplinar",
+      "nombre": "Geología de Minas",
+      "exigidos": 24,
+      "obligatorios": 21,
+      "optativos": 3
+    },
+    {
+      "id": "geomecanica",
+      "componente": "disciplinar",
+      "nombre": "Geomecánica",
+      "exigidos": 13,
+      "obligatorios": 10,
+      "optativos": 3
+    },
+    {
+      "id": "beneficio-minerales-metalurgia",
+      "componente": "disciplinar",
+      "nombre": "Beneficio de Minerales y Metalurgia",
+      "exigidos": 15,
+      "obligatorios": 9,
+      "optativos": 6
+    },
+    {
+      "id": "tecnologia-minera",
+      "componente": "disciplinar",
+      "nombre": "Tecnología Minera",
+      "exigidos": 24,
+      "obligatorios": 21,
+      "optativos": 3
+    },
+    {
+      "id": "proyectos-ingenieria",
+      "componente": "disciplinar",
+      "nombre": "Proyectos en Ingeniería",
+      "exigidos": 10,
+      "obligatorios": 10,
+      "optativos": 0
+    },
+    {
+      "id": "area-integradora",
+      "componente": "disciplinar",
+      "nombre": "Área Integradora",
+      "exigidos": 7,
+      "obligatorios": 1,
+      "optativos": 6
+    },
+    {
+      "id": "trabajo-de-grado",
+      "componente": "disciplinar",
+      "nombre": "Trabajo de Grado",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "libre-eleccion",
+      "componente": "libre-eleccion",
+      "nombre": "Libre Elección",
+      "exigidos": 36,
+      "obligatorios": 0,
+      "optativos": 36
+    }
+  ]
+}

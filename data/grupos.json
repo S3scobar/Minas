@@ -1,0 +1,28 @@
+[
+  {
+    "id": "sme",
+    "nombre": "SME Student Chapter UNALMED",
+    "sigla": "SME",
+    "subtitulo": "Society for Mining, Metallurgy & Exploration · Capítulo UNAL Medellín",
+    "logo": "img/grupo-sme.svg",
+    "tipo": "Capítulo Internacional Minero-Metalúrgico",
+    "color": "#212121",
+    "colorAcento": "#FFC107",
+    "enlace": "https://chat.whatsapp.com/CGHlFz4jj8CHTLNzpZTPtr",
+    "usuarioIg": "Grupo Oficial WhatsApp",
+    "descripcion": "Capítulo estudiantil oficial de la Society for Mining, Metallurgy & Exploration en la Universidad Nacional de Colombia Sede Medellín. Conecta a la comunidad universitaria con la industria minera y metalúrgica global mediante congresos, semilleros técnicos, conferencias con expertos internacionales, visitas técnicas y competencias estudiantiles."
+  },
+  {
+    "id": "arma",
+    "nombre": "ARMA Student Chapter UNALMED",
+    "sigla": "ARMA",
+    "subtitulo": "American Rock Mechanics Association · Capítulo UNAL Medellín",
+    "logo": "img/grupo-arma.svg",
+    "tipo": "Capítulo Internacional de Geomecánica y Rocas",
+    "color": "#000000",
+    "colorAcento": "#BDBDBD",
+    "enlace": "https://chat.whatsapp.com/EEyCCwDYAblArkmokROcEc",
+    "usuarioIg": "Grupo Oficial WhatsApp",
+    "descripcion": "Capítulo estudiantil de la American Rock Mechanics Association. Lidera el estudio avanzado, la experimentación y el modelado numérico en mecánica de rocas, geomecánica computacional aplicada a excavaciones mineras subterráneas, estabilidad de taludes a cielo abierto y tecnologías de sostenimiento estructural."
+  }
+]
