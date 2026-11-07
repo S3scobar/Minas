@@ -178,9 +178,9 @@ function pintarGrupos(grupos) {
 
   $('#grupos-contenido').innerHTML = `
     <div class="seccion-titulo">
-      <p class="seccion-titulo__antetitulo">Comunidad & Capítulos Oficiales</p>
-      <h2 id="grupos-titulo">Capítulos Técnicos y Redes de Vanguardia</h2>
-      <p class="seccion-titulo__intro">Nuestra carrera cuenta con los capítulos estudiantiles internacionales más prestigiosos del sector minero-metalúrgico y geomecánico. Conéctate con sus proyectos, cursos y eventos.</p>
+      <p class="seccion-titulo__antetitulo">Comunidad, Capítulos & Semilleros</p>
+      <h2 id="grupos-titulo">Capítulos Técnicos & Semilleros de Investigación</h2>
+      <p class="seccion-titulo__intro">Nuestra carrera cuenta con los capítulos internacionales y semilleros de investigación científica más prestigiosos del sector minero-metalúrgico y geomecánico. Conéctate con sus proyectos, cursos y eventos.</p>
     </div>
     <ul class="grupos__grid-nodos">${nodos}</ul>`;
 }
@@ -195,9 +195,9 @@ const DATOS_MODOS_SIMULADOR = {
     desc: 'Identificación de anomalías geoquímicas y geofísicas, muestreo sistemático de testigos de perforación diamantina y estimación tridimensional de leyes y reservas minerales mediante algoritmos de geoestadística espacial (Kriging).',
     lbl1: 'Profundidad Sondaje',
     val1: '450 m',
-    lbl2: 'Ley Promedio Au',
+    lbl2: 'Ley Media Au',
     val2: '7.2 g/t',
-    lbl3: 'Recursos Estimados',
+    lbl3: 'Recurso Medido',
     val3: '4.2 Mt Mineral',
     lbl4: 'Método Estimación',
     val4: 'Kriging 3D',
@@ -449,7 +449,7 @@ function iniciarGemeloDigital() {
       if (hudSub2) hudSub2.textContent = 'PROFUNDIDAD 450 M';
       if (dtM1) dtM1.textContent = 'AVANCE DE GALERÍA';
       if (dtMet1) dtMet1.textContent = '4.8 M / DÍA';
-      if (dtM2) dtM2.textContent = 'LEY DE CABEZA Au';
+      if (dtM2) dtM2.textContent = 'LEY DE CORTE Au';
       if (dtMet2) dtMet2.textContent = '6.85 G/T';
       if (dtM3) dtM3.textContent = 'SISTEMA SOSTENIMIENTO';
       if (dtMet3) dtMet3.textContent = 'SHOTCRETE + PERNOS SWELLEX';

@@ -1212,11 +1212,11 @@
 
 .grupos__grid-nodos {
   list-style: none;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px 28px;
 }
 

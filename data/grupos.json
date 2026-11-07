@@ -4,7 +4,7 @@
     "nombre": "SME Student Chapter UNALMED",
     "sigla": "SME",
     "subtitulo": "Society for Mining, Metallurgy & Exploration · Capítulo UNAL Medellín",
-    "logo": "img/grupo-sme.svg",
+    "logo": "img/grupo-sme.png",
     "tipo": "Capítulo Internacional Minero-Metalúrgico",
     "color": "#212121",
     "colorAcento": "#FFC107",
@@ -17,12 +17,25 @@
     "nombre": "ARMA Student Chapter UNALMED",
     "sigla": "ARMA",
     "subtitulo": "American Rock Mechanics Association · Capítulo UNAL Medellín",
-    "logo": "img/grupo-arma.svg",
+    "logo": "img/grupo-arma.png",
     "tipo": "Capítulo Internacional de Geomecánica y Rocas",
     "color": "#000000",
     "colorAcento": "#BDBDBD",
     "enlace": "https://chat.whatsapp.com/EEyCCwDYAblArkmokROcEc",
     "usuarioIg": "Grupo Oficial WhatsApp",
     "descripcion": "Capítulo estudiantil de la American Rock Mechanics Association. Lidera el estudio avanzado, la experimentación y el modelado numérico en mecánica de rocas, geomecánica computacional aplicada a excavaciones mineras subterráneas, estabilidad de taludes a cielo abierto y tecnologías de sostenimiento estructural."
+  },
+  {
+    "id": "rocas",
+    "nombre": "Semillero de Ingeniería de Rocas",
+    "sigla": "SIR",
+    "subtitulo": "Líder: Prof. Álvaro Jesús Castro Caicedo · ajcastro@unal.edu.co",
+    "logo": "img/semillero-rocas.jpg",
+    "tipo": "Semillero de Investigación Oficial",
+    "color": "#1c1c1c",
+    "colorAcento": "#FFC107",
+    "enlace": "https://chat.whatsapp.com/C373uhYVdNV9koMYJxT5Q2?s=sw&p=i&mlu=4&ilr=4&iam=2",
+    "usuarioIg": "Grupo Oficial WhatsApp",
+    "descripcion": "Fomenta la formación y la investigación científica en el uso y caracterización de materiales rocosos en obras y proyectos de ingeniería. Líneas: Mecánica de rocas, minería subterránea, explotación minera, modelación geotécnica, energía, petróleo y medio ambiente."
   }
 ]
