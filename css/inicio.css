@@ -134,7 +134,7 @@
 /* Grilla de cifras clave directamente en el Hero */
 .hero-minas__cifras,
 .hero-petroleos__cifras {
-  margin: 0;
+  margin: 28px 0 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1368,15 +1368,15 @@
 
 .grupo-nodo__subtitulo {
   font-size: 12px;
-  color: #A9C2DC;
+  color: var(--dorado-suave, #FFECB3);
   margin-bottom: 12px;
 }
 
 .grupo-nodo__desc {
   font-size: 14px;
   line-height: 1.55;
-  color: #D3E0EE;
-  margin-bottom: 18px;
+  color: #E0E0E0;
+  margin-bottom: 0;
   flex-grow: 1;
 }
 
@@ -1413,22 +1413,35 @@
 /* ---------- Responsive ---------- */
 
 @media (max-width: 980px) {
+  .hero-minas,
   .hero-petroleos {
-    padding: 40px 0 50px;
+    padding: 36px 0 44px;
   }
+  .hero-minas__grid,
   .hero-petroleos__grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+  .hero-minas__cifras,
   .hero-petroleos__cifras {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .hero-minas__cifras li,
+  .hero-petroleos__cifras li {
+    min-width: 0;
+    padding: 12px 10px;
+  }
+  .digital-twin-console {
+    max-width: 100%;
+    margin-inline: auto;
   }
   .simulador-grid {
     grid-template-columns: 1fr;
   }
   .simulador-visual {
     border-right: none;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(255, 193, 7, 0.2);
   }
   .programa__rejilla {
     grid-template-columns: 1fr;
@@ -1436,14 +1449,26 @@
   .grupos__grid-nodos {
     grid-template-columns: 1fr;
   }
+  .grupo-nodo__hover-pill {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 600px) {
+  .hero-minas__cifras,
   .hero-petroleos__cifras {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
-  .petro-rig-card__footer {
-    grid-template-columns: 1fr;
+  .hero-minas__cifras li,
+  .hero-petroleos__cifras li {
+    padding: 10px 8px;
+    font-size: 15px;
+  }
+  .hero-minas__cifras li small,
+  .hero-petroleos__cifras li small {
+    font-size: 9.5px;
   }
   .simulador-telemetria {
     grid-template-columns: 1fr;

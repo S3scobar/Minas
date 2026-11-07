@@ -249,7 +249,7 @@ function iniciarRielMineroNav() {
   if (!actualTab) return;
 
   function posicionarCrisol(el, animado = true) {
-    if (!el) return;
+    if (!el || window.innerWidth <= 980) return;
     const ancho = el.offsetWidth;
     const izquierda = el.offsetLeft;
 
@@ -295,7 +295,7 @@ function iniciarRielMineroNav() {
   const origenIdx = sessionStorage.getItem('minas_nav_origen_idx');
   sessionStorage.removeItem('minas_nav_origen_idx');
 
-  if (origenIdx !== null && estaciones[origenIdx] && estaciones[origenIdx] !== actualTab) {
+  if (window.innerWidth > 980 && origenIdx !== null && estaciones[origenIdx] && estaciones[origenIdx] !== actualTab) {
     const tabOrigen = estaciones[origenIdx];
     posicionarCrisol(tabOrigen, false);
     slider.classList.add('is-fundiendo');
@@ -316,6 +316,10 @@ function iniciarRielMineroNav() {
   // Manejador de clics con animación de colada de metal caliente
   estaciones.forEach((tab) => {
     tab.addEventListener('click', (e) => {
+      if (window.innerWidth <= 980) {
+        // En pantallas móviles/táctiles navegación directa inmediata
+        return;
+      }
       if (tab === actualTab) return;
 
       const urlDestino = tab.getAttribute('href');

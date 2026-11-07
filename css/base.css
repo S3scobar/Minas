@@ -73,7 +73,11 @@
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
 
 body {
   margin: 0;
@@ -81,6 +85,8 @@ body {
   line-height: 1.55;
   color: var(--tinta);
   background: url(../img/textura.svg), var(--papel);
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 h1, h2, h3, h4, p { margin: 0; }
@@ -551,14 +557,14 @@ a { color: var(--azul-brillante); }
   display: inline-block;
   font-family: var(--letra-titulo);
   font-weight: 800;
-  font-size: clamp(48px, 9vw, 98px);
-  line-height: 1;
+  font-size: clamp(32px, 8.5vw, 98px);
+  line-height: 1.05;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0 4px 22px rgba(0, 0, 0, 0.9);
 }
-.portada--corta .letras-varsity { font-size: clamp(40px, 7vw, 82px); }
+.portada--corta .letras-varsity { font-size: clamp(28px, 7vw, 82px); }
 .letras-varsity--sub {
   display: block;
   margin-top: 4px;
@@ -1290,39 +1296,56 @@ a { color: var(--azul-brillante); }
 
 @media (max-width: 980px) {
   .barra__contenido {
-    min-height: 58px;
+    min-height: 56px;
     padding-block: 8px;
+    position: relative;
+  }
+  .barra__marca {
+    max-width: calc(100% - 95px);
+  }
+  .barra__carrera-nombre {
+    font-size: 11px;
+    white-space: normal;
+    line-height: 1.15;
+  }
+  .barra__carrera-facultad {
+    font-size: 9.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
   }
   .barra__boton-menu {
     display: inline-flex;
     flex-shrink: 0;
   }
-  .nav-manifold {
+  .nav-minero {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(6, 17, 33, 0.98);
+    background: rgba(18, 18, 18, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 0;
     border: none;
-    border-bottom: 3.5px solid var(--dorado-ambar);
+    border-bottom: 3.5px solid var(--oro-minero);
     box-shadow: 0 16px 36px -6px rgba(0, 0, 0, .85);
     padding: 16px;
     flex-direction: column;
     max-height: calc(100vh - 65px);
     overflow-y: auto;
+    z-index: 100;
   }
-  .barra.is-menu-abierto .nav-manifold {
+  .barra.is-menu-abierto .nav-minero {
     display: flex;
     animation: menuDesplegar .2s ease-out;
   }
-  .nav-manifold__tuberia {
-    display: none;
+  .nav-minero__riel {
+    display: none !important;
   }
-  .nav-manifold__estaciones {
+  .nav-minero__estaciones {
     flex-direction: column;
     width: 100%;
     gap: 8px;
@@ -1333,14 +1356,18 @@ a { color: var(--azul-brillante); }
     padding: 12px 18px;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(255, 193, 7, 0.25);
     color: #fff;
+    font-size: 13px;
   }
   .nav-estacion.is-activa {
-    background: var(--dorado-ambar) !important;
-    color: var(--azul-petroleo) !important;
+    background: var(--oro-minero) !important;
+    color: #000000 !important;
     border-color: #FFF3C4;
     font-weight: 800;
+  }
+  .nav-estacion.is-activa .nav-estacion__cod {
+    color: #000000;
   }
 }
 
@@ -1381,18 +1408,20 @@ a { color: var(--azul-brillante); }
   }
   .barra__escudo,
   .barra__escudo-img {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
   }
-  .barra__texto {
-    font-size: 12px;
-    letter-spacing: .04em;
+  .barra__carrera-nombre {
+    font-size: 10px;
+    line-height: 1.15;
+    max-width: 165px;
   }
-  .barra__texto small {
-    font-size: 10.5px;
+  .barra__carrera-facultad {
+    display: none;
   }
   .barra__boton-menu {
-    padding: 7px 11px;
+    padding: 6px 10px;
     font-size: 11px;
+    gap: 6px;
   }
 }
