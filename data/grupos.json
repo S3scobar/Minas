@@ -37,5 +37,18 @@
     "enlace": "https://chat.whatsapp.com/C373uhYVdNV9koMYJxT5Q2?s=sw&p=i&mlu=4&ilr=4&iam=2",
     "usuarioIg": "Grupo Oficial WhatsApp",
     "descripcion": "Fomenta la formación y la investigación científica en el uso y caracterización de materiales rocosos en obras y proyectos de ingeniería. Líneas: Mecánica de rocas, minería subterránea, explotación minera, modelación geotécnica, energía, petróleo y medio ambiente."
+  },
+  {
+    "id": "ignea",
+    "nombre": "Semillero de Investigación ÍGNEA",
+    "sigla": "ÍGNEA",
+    "subtitulo": "Minerales, Materiales y Recursos del Subsuelo · Líder: Prof. Oscar Restrepo Baena",
+    "logo": "img/semillero-ignea.png",
+    "tipo": "Semillero de Investigación Oficial",
+    "color": "#1b254b",
+    "colorAcento": "#FFC107",
+    "enlace": "https://chat.whatsapp.com/LWxg0Bv2r55APkfKyvRexM?s=qt&p=a&mlu=4",
+    "usuarioIg": "Grupo Oficial WhatsApp",
+    "descripcion": "Semillero de investigación enfocado en el estudio y caracterización de minerales, metalurgia extractiva, nuevos materiales, procesamiento de minerales y sostenibilidad en la industria minero-metalúrgica. Vincula a estudiantes con proyectos científicos de alto impacto y el sector productivo."
   }
 ]
